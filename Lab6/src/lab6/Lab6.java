@@ -1,4 +1,3 @@
-
 package lab6;
 import java.io.File;
 import java.io.IOException;
