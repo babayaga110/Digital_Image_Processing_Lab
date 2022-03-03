@@ -7,6 +7,7 @@ import javax.imageio.ImageIO;
 import java.awt.Color;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 
 public class Design extends javax.swing.JFrame {
@@ -138,7 +139,7 @@ public class Design extends javax.swing.JFrame {
 
     private void findBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_findBtnActionPerformed
           String Location = location.getText();
-          File F1 = new File(Location);
+          File F1 = new File(Location + "."+imgFormat.getText());
         try {
             BufferedImage img = ImageIO.read(F1);
             int index = 1;
@@ -151,6 +152,9 @@ public class Design extends javax.swing.JFrame {
                   index ++;
             }
         }
+          JOptionPane.showMessageDialog(this, "Done");
+             location.setText("");
+             imgFormat.setText("");
             
         } catch (IOException ex) {
             Logger.getLogger(Design.class.getName()).log(Level.SEVERE, null, ex);

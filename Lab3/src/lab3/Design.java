@@ -121,7 +121,7 @@ public class Design extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
           String Location = location.getText();
-          File F1 = new File(Location);  
+          File F1 = new File(Location + "."+imgFormat.getText());  
         try {
             BufferedImage img = ImageIO.read(F1);
             int width = img.getWidth();
@@ -138,7 +138,7 @@ public class Design extends javax.swing.JFrame {
                      img.setRGB(j,i,pixel);
                 }
         }
-            File f2 = new File("C:\\Users\\DarkMoon\\Desktop\\"+imgName.getText() +"."+imgFormat.getText());
+            File f2 = new File(Location+imgName.getText() +"."+imgFormat.getText());
             ImageIO.write(img, imgFormat.getText(), f2);
              JOptionPane.showMessageDialog(this, "Done");
              location.setText("");
