@@ -1,4 +1,3 @@
-
 package midtest;
 import java.io.File;
 import java.awt.image.BufferedImage;
