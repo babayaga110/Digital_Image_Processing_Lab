@@ -26,7 +26,7 @@ public class Lab6 {
              img3.setRGB(j,n,pixel);
             }
         }
-        File f2 = new File("C:\\Users\\DarkMoon\\Desktop\\2.jpg");
+        File f2 = new File("C:\\Users\\DarkMoon\\Desktop\\5.jpg");
         ImageIO.write(img3, "jpg", f2);
     }
     

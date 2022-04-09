@@ -21,7 +21,7 @@ public class Lab4 {
             }
         }
        
-        File f2 = new File("C:\\Users\\DarkMoon\\Desktop\\2.jpg");
+        File f2 = new File("C:\\Users\\DarkMoon\\Desktop\\3.jpg");
         ImageIO.write(img2, "jpg", f2);
     }
     
