@@ -4,8 +4,7 @@ import java.awt.image.BufferedImage;
 import java.io.IOException;
 import javax.imageio.ImageIO;
 
-public class MIDTEST {
-
+public class MIDTEST{
     public static void main(String[] args) throws IOException {
         File f1 = new File("C:\\Users\\DarkMoon\\Desktop\\1.jpg");
         BufferedImage img = ImageIO.read(f1);
